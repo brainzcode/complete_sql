@@ -1,0 +1,2 @@
+SELECT MAX(individualTotalEarnings) as max_individual_earnings
+FROM freelancers
