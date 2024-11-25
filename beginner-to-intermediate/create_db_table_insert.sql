@@ -51,3 +51,11 @@ INSERT INTO db_sql_tutorial.employees VALUES (2,'Ann', 'Labrune', 'France', 7500
 INSERT INTO db_sql_tutorial.employees VALUES (3,'Marie', 'Bertrand', 'Brazil', 75000);
 INSERT INTO db_sql_tutorial.employees VALUES (4,'Georg', 'Afonso', 'UK', 75000);
 INSERT INTO db_sql_tutorial.employees VALUES (5,'Marie', 'Steel', 'UK', 75000);
+
+CREATE TABLE db_sql_tutorial.freelancers(
+	personId INT PRIMARY KEY AUTO_INCREMENT,
+    personName VARCHAR(50) NOT NULL,
+    earnings FLOAT NOT NULL,
+    birthDate DATE,
+    phone VARCHAR(15) NOT NULL UNIQUE
+)
